@@ -1,0 +1,101 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Jonathan\\source\\repos\\Orbit\\Orbit.XUnitTest\\HomeTest.XUnitTest.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Jonathan\\source\\repos\\Orbit\\Orbit.XUnitTest\\HomeTest.XUnitTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Jonathan\\source\\repos\\Orbit\\Orbit.XUnitTest\\HomeTest.XUnitTest.csproj",
+        "projectName": "HomeTest.XUnitTest",
+        "projectPath": "C:\\Users\\Jonathan\\source\\repos\\Orbit\\Orbit.XUnitTest\\HomeTest.XUnitTest.csproj",
+        "packagesPath": "C:\\Users\\Jonathan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jonathan\\source\\repos\\Orbit\\Orbit.XUnitTest\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Jonathan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\Jonathan\\source\\repos\\Orbit\\HomeTest.Data\\HomeTest.Data.csproj": {
+                "projectPath": "C:\\Users\\Jonathan\\source\\repos\\Orbit\\HomeTest.Data\\HomeTest.Data.csproj"
+              },
+              "C:\\Users\\Jonathan\\source\\repos\\Orbit\\HomeTest.Services\\HomeTest.Services.csproj": {
+                "projectPath": "C:\\Users\\Jonathan\\source\\repos\\Orbit\\HomeTest.Services\\HomeTest.Services.csproj"
+              },
+              "C:\\Users\\Jonathan\\source\\repos\\Orbit\\HomeTest\\HomeTest.csproj": {
+                "projectPath": "C:\\Users\\Jonathan\\source\\repos\\Orbit\\HomeTest\\HomeTest.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.14.7, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

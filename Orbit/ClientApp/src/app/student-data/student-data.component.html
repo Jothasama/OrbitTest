@@ -1,0 +1,90 @@
+<h1 id="tableLabel">Students</h1>
+<p>This component demonstrates fetching data from the server.</p>
+<p *ngIf="!students"><em>Loading...</em></p>
+<form [formGroup]="studentForm" (ngSubmit)="this[eventValue]()">
+  <h3>Students Table CRUD Operation</h3>
+  <div class="row">
+    <table class="table">
+      <tr>
+        <td>Username</td>
+        <td>
+          <input type="hidden" formControlName="id">
+          <input type="text" formControlName="username">
+          <div *ngIf="submitted && studentForm.controls.username.errors" class="text-danger">
+            <div *ngIf="studentForm.controls.username.errors.required">Username is required</div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>First Name</td>
+        <td>
+          <input type="text" formControlName="firstName">
+          <div *ngIf="submitted && studentForm.controls.firstName.errors" class="text-danger">
+            <div *ngIf="studentForm.controls.firstName.errors.required">First Name is required</div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>Last Name</td>
+        <td>
+          <input type="text" formControlName="lastName">
+          <div *ngIf="submitted && studentForm.controls.lastName.errors" class="text-danger">
+            <div *ngIf="studentForm.controls.lastName.errors.required">Last Name is required</div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>Age</td>
+        <td>
+          <input type="text" formControlName="age">
+          <div *ngIf="submitted && studentForm.controls.age.errors" class="text-danger">
+            <div *ngIf="studentForm.controls.age.errors.required">Age is required</div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+      <tr>
+        <td>Career</td>
+        <td>
+          <input type="text" formControlName="career">
+          <div *ngIf="submitted && studentForm.controls.career.errors" class="text-danger">
+            <div *ngIf="studentForm.controls.career.errors.required">Career is required</div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button type="submit" class="btn btn-primary">{{eventValue}}</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="row">
+    <table class='table table-striped' aria-labelledby="tableLabel" *ngIf="students">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Username</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Age</th>
+          <th>Career</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let student of students">
+          <td>{{ student.id }}</td>
+          <td>{{ student.username }}</td>
+          <td>{{ student.firstName }}</td>
+          <td>{{ student.lastName }}</td>
+          <td>{{ student.age }}</td>
+          <td>{{ student.career }}</td>
+          <td><a (click)="Edit(student)" class="btn btn-warning"><span class="fa fa-edit"></span></a></td>
+          <td><a (click)="Delete(student.id)" class="btn btn-danger"><span class="fa fa-remove"></span></a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</form>
